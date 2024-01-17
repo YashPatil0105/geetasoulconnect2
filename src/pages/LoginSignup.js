@@ -2,9 +2,11 @@ import React from "react";
 import * as Components from './Components';
 
 
+
 function LoginSignup() {
     const [signIn, toggle] = React.useState(true);
      return(
+        <div className="login">
          <Components.Container>
              <Components.SignUpContainer signinIn={signIn}>
                  <Components.Form>
@@ -45,7 +47,7 @@ function LoginSignup() {
                            Enter Your personal details and start journey with us
                        </Components.Paragraph>
                            <Components.GhostButton onClick={() => toggle(false)}>
-                               Sigin Up
+                               Sign Up
                            </Components.GhostButton> 
                      </Components.RightOverlayPanel>
  
@@ -53,6 +55,8 @@ function LoginSignup() {
              </Components.OverlayContainer>
 
          </Components.Container>
+         </div>
+         
      )
 }
 

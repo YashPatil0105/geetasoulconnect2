@@ -21,7 +21,8 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <span className='text-white text-2xl font-bold px-8'>GitaSoulConnect</span>
-          <a href={<LoginSignup />} className=' text-xl font-semibold pl-[57.5rem] '>Login / Register</a>
+          <Link to='/LoginSignup' className='text-xl font-semibold pl-[57.5rem]'>Login / Register</Link>
+
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

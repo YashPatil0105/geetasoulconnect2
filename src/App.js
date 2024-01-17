@@ -14,6 +14,8 @@ import DiscussionForum from './pages/DiscussionForum';
 import Likemindedpeoplecommunity from './pages/Likemindedpeoplecommunity';
 import YourDownloads from './pages/YourDownloads';
 import AdditionalSettings from './pages/AdditionalSettings';
+import LoginSignup from './pages/LoginSignup';
+import './pages/loginStyle.css';
 
 
 
@@ -37,6 +39,7 @@ function App() {
           <Route path='/Likemindedpeoplecommunity' component={Likemindedpeoplecommunity} />
           <Route path='/YourDownloads' component={YourDownloads} />
           <Route path='/AdditionalSettings' component={AdditionalSettings} />
+          <Route path='/LoginSignup' component={LoginSignup} />
 
         </Switch>
        
