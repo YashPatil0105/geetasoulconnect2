@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import LoginSignup from './pages/LoginSignup';
+
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -19,7 +21,7 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <span className='text-white text-2xl font-bold px-8'>GitaSoulConnect</span>
-          <a href="#" className=' text-xl font-semibold pl-[57.5rem] '>Login / Register</a>
+          <a href={<LoginSignup />} className=' text-xl font-semibold pl-[57.5rem] '>Login / Register</a>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

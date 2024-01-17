@@ -1,4 +1,5 @@
 import React from 'react';
+import 'semantic-ui-react';
 import './App.css';
 import Navbar from './Navbar';
 import './index.css';
@@ -15,12 +16,15 @@ import YourDownloads from './pages/YourDownloads';
 import AdditionalSettings from './pages/AdditionalSettings';
 
 
+
+
 function App() {
   return (
     <>
     
       <Router>
         <Navbar />
+       
     
         <Switch>
           <Route path='/' exact component={Home} />

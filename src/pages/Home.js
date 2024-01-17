@@ -1,5 +1,7 @@
 import React from "react";
 import "../index.css";
+import ChatBotPage from "../ChatBotPage";
+
 
 
 function Home() {
@@ -10,7 +12,7 @@ function Home() {
         <select
           name="select"
           id="select"
-          className="w-80 h-8  text-center mt-32 rounded-lg mx-40 "
+          className="w-80 h-8  text-center mt-32 rounded-lg mx-40  border-black border-2"
         >
           <option value="">----Select language----</option>
           <option value="English">English</option>
@@ -37,15 +39,11 @@ function Home() {
         
       
       </div>
-      <div className="search-bar mx-15 px-52 pt-44 ">
-        <input
-          type="search"
-          placeholder=" Search / Chatbot"
-          className="w-80 h-10 rounded-xl text-center"
-        />
-      </div>
+     
+      <ChatBotPage  />
      
       </main>
+      
       
     </div>
   );
